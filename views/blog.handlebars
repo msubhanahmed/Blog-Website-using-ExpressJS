@@ -1,0 +1,15 @@
+<h2>Latest Blogs</h2>
+<div class="card-group">
+{{#each blogs}}
+    <div class="card" style="width: 18rem; margin-right:10px" display="inline" >
+        <img src="./download.jpg" class="card-img-top" alt="blog icon">
+        <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">{{this.content}}</p>
+        </div>
+        <div class="card-footer">
+            <a href="/blogpost/{{this.slug}}" class="btn btn-primary">Read Blog</a>
+        </div>
+    </div>
+{{/each}}
+</div>
